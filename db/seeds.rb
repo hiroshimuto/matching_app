@@ -1,7 +1,41 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+# ダミーユーザー作成
+User.create!(
+  email: 'user1@example.com',
+  password: 'aaaaaaaa',
+  name: 'オリバー',
+  introduction: 'オリバーです',
+  sex: 0,
+  img: open("#{Rails.root}/db/dummy_img/1.jpg")
+)
+User.create!(
+  email: 'user2@example.com',
+  password: 'aaaaaaaa',
+  name: 'ハリー',
+  introduction: 'ハリーです',
+  sex: 0,
+  img: open("#{Rails.root}/db/dummy_img/2.jpg")
+)
+User.create!(
+  email: 'user3@example.com',
+  password: 'aaaaaaaa',
+  name: 'オリヴィア',
+  introduction: 'オリヴィアです',
+  sex: 1,
+  img: open("#{Rails.root}/db/dummy_img/3.jpg")
+)
+User.create!(
+  email: 'user4@example.com',
+  password: 'aaaaaaaa',
+  name: 'リリー',
+  introduction: 'リリーです',
+  sex: 1,
+  img: open("#{Rails.root}/db/dummy_img/4.jpg")
+)
+User.create!(
+  email: 'user5@example.com',
+  password: 'aaaaaaaa',
+  name: 'サム',
+  introduction: 'サムです',
+  sex: 0,
+  img: open("#{Rails.root}/db/dummy_img/5.jpg")
+)
