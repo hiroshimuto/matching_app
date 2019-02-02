@@ -6,4 +6,5 @@ class User < ApplicationRecord
 
   mount_uploader :img, ImgUploader
   enum sex: { 男: 0, 女: 1 }
+  has_many :reactions
 end
