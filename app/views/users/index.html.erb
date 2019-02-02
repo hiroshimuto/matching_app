@@ -23,10 +23,3 @@
       <a href="#" class="like"><i class="fas fa-heart fa-2x"></i></a>
   </div>
 </div>
-<script>
-  $("#tinderslide").jTinder();
-  $('.actions .like, .actions .dislike').click(function(e){
-    e.preventDefault();
-    $("#tinderslide").jTinder($(this).attr('class'));
-  });
-</script>
